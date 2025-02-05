@@ -1,0 +1,55 @@
+/* 全局代码隐藏规则 */
+pre,
+code,
+[class*="language-"],
+[class*="hljs"],
+.prism-code,
+.token,
+.markdown-body pre,
+.highlight,
+.syntax,
+.source-code,
+[class*="prism-"],
+[class*="highlight-"],
+.code-block,
+.code-wrapper {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  height: 0 !important;
+  width: 0 !important;
+  position: absolute !important;
+  pointer-events: none !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  min-height: 0 !important;
+  max-height: 0 !important;
+}
+
+/* 基础样式重置 */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: var(--color-bg-1);
+  overflow-x: hidden;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+/* 禁用选择 */
+.no-select {
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+} 

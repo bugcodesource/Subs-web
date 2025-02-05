@@ -1,0 +1,55 @@
+/* 全局样式 */
+:root {
+  --primary-color: #165DFF;
+  --success-color: #00B42A;
+  --warning-color: #FF7D00;
+  --danger-color: #F53F3F;
+}
+
+/* 基础样式重置 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  background-color: var(--color-bg-1);
+}
+
+/* 通用工具类 */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* 隐藏代码显示 */
+pre, code, [class*="language-"], [class*="hljs"] {
+  display: none !important;
+}
+
+/* 确保内容正确显示 */
+.arco-layout {
+  background: transparent;
+}
+
+.arco-card {
+  background: var(--color-bg-2);
+}
+
+/* 修复可能的层级问题 */
+.arco-modal-wrapper {
+  z-index: 1000;
+}
+
+.arco-message-wrapper {
+  z-index: 1001;
+} 
